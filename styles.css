@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 .container {
   max-width: 575px;
   margin: 0 auto;
@@ -15,7 +19,6 @@
 }
 
 .column-full > h1 {
-  font-family: "Open sans", sans-serif;
   text-align: center;
 }
 
@@ -28,4 +31,63 @@
 
 .hidden {
   display: none;
+}
+
+.modal {
+  padding: 50px;
+}
+
+select {
+  margin-right: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.submit {
+  text-align: right;
+  margin: 1rem auto;
+}
+
+.submit-button {
+  box-shadow: 2px 3px;
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  resize: none;
+  width: 25rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.column-full.pop-up {
+  border-style: solid;
+}
+
+.overlay.open {
+  display: block;
+  position: fixed;
+  z-index: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0 0 0 / 68%);
+}
+
+.overlay.closed {
+  display: none;
+  position: fixed;
+  z-index: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0 0 0 / 68%);
+}
+
+.container.modal {
+  background-color: white;
+  margin-top: 10rem;
 }

@@ -7,42 +7,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
+
+  <div class="container">
+    <div class="row">
+      <div class="column-full">
+        <h1>Weekly Planner</h1>
+      </div>
+    </div>
+  </div>
+  <div data-view="add-entry" class="container">
+    <div class="row">
+      <div class="column-full">
+        <button class="entry-button" type="button">Add Entry</button>
+      </div>
+    </div>
+  </div>
+  <div class="overlay closed">
+    <div data-view="modal" class="container modal hidden">
       <div class="row">
-        <div class="column-full">
-          <h1>Weekly Planner</h1>
+        <div class="column-full pop-up">
+          <form>
+            <h2>Add Entry</h2>
+            <label for="dropdown-days">
+              <select name="day-of-the-week" id="day-of-the-week">
+                <option value="day-of-week">Day of Week</option>
+              </select>
+            </label>
+            <label for="dropdown-time">
+              <select name="time" id="time">
+                <option value="time">Time</option>
+              </select>
+            </label>
+            <div class="row">
+              <div class="column-full">
+                <label for="text-area">
+                  <textarea placeholder="Description" rows="4"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="submit">
+              <button class="submit-button" type="submit">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </header>
-  <main>
-    <div data-view="add-entry" class="container hidden">
-      <div class="row">
-        <div class="column-full">
-          <button class="entry-button" type="button">Add Entry</button>
-        </div>
-      </div>
-    </div>
-    <div class="container modal">
-      <form>
-        <label for="dropdown-days">
-          <select name="day-of-the-week" id="day-of-the-week">
-            <option value="day-of-week">Day of Week</option>
-          </select>
-        </label>
-        <label for="dropdown-time">
-          <select name="time" id="time">
-            <option value="time">Time</option>
-          </select>
-        </label>
-        <label for="text-area">
-          <textarea placeholder="Description"></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </main>
+  </div>
+
+
   <script src="main.js"></script>
 </body>
 </html>
