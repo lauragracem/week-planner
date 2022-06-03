@@ -99,12 +99,42 @@ ul {
   list-style: none;
 }
 
-li {
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
-  margin: 2rem;
+  width: 100px;
+  height: 100px;
+  margin: 2em;
 }
 
-li:hover {
+.day:hover {
   cursor: pointer;
+  background-color: lightgray;
+}
+
+table {
+  border-style: solid;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead,
+td,
+th {
+  border-left: 1px solid black;
+}
+
+tr {
+  height: 1.8em;
+}
+
+thead {
+  text-align: left;
+  background-color: gray;
+}
+
+tbody > tr:nth-child(odd) {
   background-color: lightgray;
 }

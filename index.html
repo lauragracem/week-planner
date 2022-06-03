@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <div class="container">
     <div class="row">
       <div class="column-full">
@@ -17,13 +16,41 @@
     <div class="row">
       <div class="column-full">
         <ul>
-          <li class="sun">Sunday</li>
-          <li class="mon">Monday</li>
-          <li class="tues">Tuesday</li>
-          <li class="wed">Wednesday</li>
-          <li class="thurs">Thursday</li>
-          <li class="fri">Friday</li>
-          <li class="sat">Saturday</li>
+          <li class="sun">
+            <div class="day">
+              Sunday
+            </div>
+          </li>
+          <li class="mon">
+            <div class="day">
+              Monday
+            </div>
+          </li>
+          <li class="tues">
+            <div class="day">
+              Tuesday
+            </div>
+          </li>
+          <li class="wed">
+            <div class="day">
+              Wednesday
+            </div>
+          </li>
+          <li class="thurs">
+            <div class="day">
+              Thursday
+            </div>
+          </li>
+          <li class="fri">
+            <div class="day">
+              Friday
+            </div>
+          </li>
+          <li class="sat">
+            <div class="day">
+              Saturday
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -32,6 +59,59 @@
     <div class="row">
       <div class="column-full">
         <button class="entry-button" type="button">Add Entry</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="column-full">
+        <h2>Scheduled Events for Monday</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column-full table">
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -44,11 +124,30 @@
             <label for="dropdown-days">
               <select name="day-of-the-week" id="day-of-the-week">
                 <option value="day-of-week">Day of Week</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
               </select>
             </label>
             <label for="dropdown-time">
               <select name="time" id="time">
                 <option value="time">Time</option>
+                <option value="1">01:00</option>
+                <option value="2">02:00</option>
+                <option value="3">03:00</option>
+                <option value="4">04:00</option>
+                <option value="5">05:00</option>
+                <option value="6">06:00</option>
+                <option value="7">07:00</option>
+                <option value="8">08:00</option>
+                <option value="9">09:00</option>
+                <option value="10">10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
               </select>
             </label>
             <div class="row">
@@ -66,8 +165,7 @@
       </div>
     </div>
   </div>
-
-
+  <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
