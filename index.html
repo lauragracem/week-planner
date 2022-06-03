@@ -20,18 +20,26 @@
     <div data-view="add-entry" class="container">
       <div class="row">
         <div class="column-full">
-          <button type="button">Add Entry</button>
+          <button class="entry-button" type="button">Add Entry</button>
         </div>
       </div>
     </div>
     <div class="container modal">
       <form>
-        <label id="dropdown-days">
-          <input name="day-of-the-week" id="day-of-the-week">
+        <label for="dropdown-days">
+          <select name="day-of-the-week" id="day-of-the-week">
+            <option value="day-of-week">Day of Week</option>
+          </select>
         </label>
-        <label id="dropdown-time">
-          <input name="time" id="time">
+        <label for="dropdown-time">
+          <select name="time" id="time">
+            <option value="time">Time</option>
+          </select>
         </label>
+        <label for="text-area">
+          <textarea placeholder="Description"></textarea>
+        </label>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </main>

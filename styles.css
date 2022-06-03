@@ -1,0 +1,25 @@
+.container {
+  max-width: 575px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-full > h1 {
+  font-family: "Open sans", sans-serif;
+  text-align: center;
+}
+
+.entry-button {
+  background-color: rgb(107, 165, 236);
+  color: black;
+  padding: 0.5rem 3.5rem;
+  box-shadow: 2px 3px;
+}
