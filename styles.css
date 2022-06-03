@@ -23,10 +23,15 @@
 }
 
 .entry-button {
-  background-color: rgb(107, 165, 236);
+  background-color: white;
   color: black;
   padding: 0.5rem 3.5rem;
   box-shadow: 2px 3px;
+}
+
+.entry-button:hover {
+  cursor: pointer;
+  background-color: lightblue;
 }
 
 .hidden {
@@ -61,10 +66,6 @@ h2 {
   text-align: center;
 }
 
-.column-full.pop-up {
-  border-style: solid;
-}
-
 .overlay.open {
   display: block;
   position: fixed;
@@ -90,4 +91,15 @@ h2 {
 .container.modal {
   background-color: white;
   margin-top: 10rem;
+  border-style: solid;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  border-style: solid;
+  margin: 2rem;
 }
