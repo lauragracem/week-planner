@@ -7,6 +7,34 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="column-full">
+          <h1>Weekly Planner</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div data-view="add-entry" class="container">
+      <div class="row">
+        <div class="column-full">
+          <button type="button">Add Entry</button>
+        </div>
+      </div>
+    </div>
+    <div class="container modal">
+      <form>
+        <label id="dropdown-days">
+          <input name="day-of-the-week" id="day-of-the-week">
+        </label>
+        <label id="dropdown-time">
+          <input name="time" id="time">
+        </label>
+      </form>
+    </div>
+  </main>
   <script src="main.js"></script>
 </body>
 </html>
