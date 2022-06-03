@@ -103,3 +103,8 @@ li {
   border-style: solid;
   margin: 2rem;
 }
+
+li:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
