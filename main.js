@@ -26,14 +26,26 @@ var $time = document.querySelector('#time');
 var $description = document.querySelector('textarea');
 var $tableData = document.querySelectorAll('td');
 var currentDay = 'monday';
-// var $ul = document.querySelector('ul');
-// var $mon = document.querySelector('.mon');
+var $ul = document.querySelector('ul');
+var $mon = document.querySelector('.mon');
 // var $tues = document.querySelector('.tues');
 // var $wed = document.querySelector('.wed');
 // var $thurs = document.querySelector('.thurs');
 // var $fri = document.querySelector('.fri');
 // var $sat = document.querySelector('.sat');
 // var $sun = document.querySelector('.sun');
+
+var entryJSON = localStorage.getItem('data');
+if (entryJSON !== null) {
+  data = JSON.parse(entryJSON);
+}
+
+window.addEventListener('beforeunload', entryBase);
+
+function entryBase(event) {
+  var dataJSON = JSON.stringify(data);
+  localStorage.setItem('data', dataJSON);
+}
 
 $entryButton.addEventListener('click', event => {
   $entryButton.className = '.entry-button hidden';
@@ -106,11 +118,8 @@ function render() {
   }
 }
 
-// $ul.addEventListener('click', function (e) {
-//   if (e.target === $mon) {
-
-//   }
-// });
-
-// time/description-even:time, odd:description
-// assign it to tableData index
+$ul.addEventListener('click', function (e) {
+  if (e.target === $mon) {
+    render(data.schedule.monday);
+  }
+});
